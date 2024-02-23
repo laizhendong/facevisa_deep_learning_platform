@@ -1,0 +1,11 @@
+INFO:
+    TOP_RANTGE: 799                                                            
+    BOTTOM_RANGE: 300                                                          
+    LEFT_RANGE: 39                                                            
+    RIGHT_RANGE: 40                                                           
+    RATION: 2.65                                                                #width/height
+    NUM_POINTS: 30                                                            
+    SRC_ROOT: "E:/dev/gitlab/alg_for_ai/all_others/landmarks/hrnet/data/train_valid/pts2json/mpii/images"                                                                  
+    DST_ROOT: "E:/dev/gitlab/alg_for_ai/all_others/landmarks/hrnet/data/train_valid/pts2json/mpii/annot"                                                     
+    JSON_NAME: "train.json"                                                                                                                    
+    VIS_FLAG: True                                                                                                                                             

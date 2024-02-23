@@ -1,0 +1,1 @@
+python tools/forward.py --cfg experiments/mpii/hrnet/inference-config.yaml --src_dir data/forward
