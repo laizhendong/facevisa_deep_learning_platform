@@ -1,0 +1,38 @@
+
+
+##############################################
+#Model
+MODEL:
+    BACKBONE_NAME: "resnet18"
+    WEIGHTS: ""
+    USE_IMAGENET_BACKBONE: True
+
+
+############################################
+#Dataset
+DATA:
+    NAME: "classical_classifier"
+    CLASSES_BALANCED: False
+    MEAN: (0, 0, 0)
+    STD: (1.0, 1.0, 1.0)
+    AUGMENT:
+        ROTATION: 10.0
+        GAMMA: 0.1
+        RANDOMBRIGHTNESS: [0.5,1.5,"multiple"]
+        #RandomContrast : [0.7, 1.4]
+        HFLIP: true
+        VFLIP: false
+        SHUFFLE_COLOR: false
+        COLOR: false
+        JPEGCOMPRESSION: [0.5,1.0]
+        RESIZE: [256,256] # width height
+
+SOLVER:
+    DEVICE: 0
+    LR_BASE: 0.01
+    LR_POLICY: "cosine"
+    GRADIENT_MAX: -1
+    EPOCHS: 5
+    BATCH_SIZE: 16
+
+
